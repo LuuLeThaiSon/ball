@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+
+     <img id="myImg" src="img/Football_(soccer_ball).svg" width="30%">
+
+     <p>Click to move the ball to right!</p>
+
+     <button onclick="ballMove()">Click!!!</button>
+
+</body>
+</html>
+
+<script>
+
+     let imgObj = null;
+
+     imgObj = document.getElementById("myImg");
+
+     function ballMove() {
+          imgObj = document.getElementById("myImg");
+          imgObj.style.position = "relative";
+          imgObj.style.left = "0px"
+     }
+
+</script>
